@@ -1,0 +1,130 @@
+-------------------------------------------------------------------------------
+Test set: com.tecsup.petclinic.services.PetServiceTest
+-------------------------------------------------------------------------------
+Tests run: 7, Failures: 0, Errors: 7, Skipped: 0, Time elapsed: 7.372 s <<< FAILURE! - in com.tecsup.petclinic.services.PetServiceTest
+testUpdatePet  Time elapsed: 1.047 s  <<< ERROR!
+org.springframework.transaction.CannotCreateTransactionException: Could not open JPA EntityManager for transaction; nested exception is org.hibernate.exception.JDBCConnectionException: Unable to acquire JDBC Connection
+	at com.tecsup.petclinic.services.PetServiceTest.testUpdatePet(PetServiceTest.java:135)
+Caused by: org.hibernate.exception.JDBCConnectionException: Unable to acquire JDBC Connection
+	at com.tecsup.petclinic.services.PetServiceTest.testUpdatePet(PetServiceTest.java:135)
+Caused by: com.mysql.cj.jdbc.exceptions.CommunicationsException: 
+Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at com.tecsup.petclinic.services.PetServiceTest.testUpdatePet(PetServiceTest.java:135)
+Caused by: com.mysql.cj.exceptions.CJCommunicationsException: 
+Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at com.tecsup.petclinic.services.PetServiceTest.testUpdatePet(PetServiceTest.java:135)
+Caused by: java.net.ConnectException: Connection refused: no further information
+	at com.tecsup.petclinic.services.PetServiceTest.testUpdatePet(PetServiceTest.java:135)
+
+testFindPetByName  Time elapsed: 1.16 s  <<< ERROR!
+org.springframework.dao.DataAccessResourceFailureException: Unable to acquire JDBC Connection; nested exception is org.hibernate.exception.JDBCConnectionException: Unable to acquire JDBC Connection
+	at com.tecsup.petclinic.services.PetServiceTest.testFindPetByName(PetServiceTest.java:58)
+Caused by: org.hibernate.exception.JDBCConnectionException: Unable to acquire JDBC Connection
+	at com.tecsup.petclinic.services.PetServiceTest.testFindPetByName(PetServiceTest.java:58)
+Caused by: com.mysql.cj.jdbc.exceptions.CommunicationsException: 
+Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at com.tecsup.petclinic.services.PetServiceTest.testFindPetByName(PetServiceTest.java:58)
+Caused by: com.mysql.cj.exceptions.CJCommunicationsException: 
+Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at com.tecsup.petclinic.services.PetServiceTest.testFindPetByName(PetServiceTest.java:58)
+Caused by: java.net.ConnectException: Connection refused: no further information
+	at com.tecsup.petclinic.services.PetServiceTest.testFindPetByName(PetServiceTest.java:58)
+
+testFindPetById  Time elapsed: 1.042 s  <<< ERROR!
+org.springframework.transaction.CannotCreateTransactionException: Could not open JPA EntityManager for transaction; nested exception is org.hibernate.exception.JDBCConnectionException: Unable to acquire JDBC Connection
+	at com.tecsup.petclinic.services.PetServiceTest.testFindPetById(PetServiceTest.java:39)
+Caused by: org.hibernate.exception.JDBCConnectionException: Unable to acquire JDBC Connection
+	at com.tecsup.petclinic.services.PetServiceTest.testFindPetById(PetServiceTest.java:39)
+Caused by: com.mysql.cj.jdbc.exceptions.CommunicationsException: 
+Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at com.tecsup.petclinic.services.PetServiceTest.testFindPetById(PetServiceTest.java:39)
+Caused by: com.mysql.cj.exceptions.CJCommunicationsException: 
+Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at com.tecsup.petclinic.services.PetServiceTest.testFindPetById(PetServiceTest.java:39)
+Caused by: java.net.ConnectException: Connection refused: no further information
+	at com.tecsup.petclinic.services.PetServiceTest.testFindPetById(PetServiceTest.java:39)
+
+testFindPetByOwnerId  Time elapsed: 1.029 s  <<< ERROR!
+org.springframework.dao.DataAccessResourceFailureException: Unable to acquire JDBC Connection; nested exception is org.hibernate.exception.JDBCConnectionException: Unable to acquire JDBC Connection
+	at com.tecsup.petclinic.services.PetServiceTest.testFindPetByOwnerId(PetServiceTest.java:86)
+Caused by: org.hibernate.exception.JDBCConnectionException: Unable to acquire JDBC Connection
+	at com.tecsup.petclinic.services.PetServiceTest.testFindPetByOwnerId(PetServiceTest.java:86)
+Caused by: com.mysql.cj.jdbc.exceptions.CommunicationsException: 
+Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at com.tecsup.petclinic.services.PetServiceTest.testFindPetByOwnerId(PetServiceTest.java:86)
+Caused by: com.mysql.cj.exceptions.CJCommunicationsException: 
+Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at com.tecsup.petclinic.services.PetServiceTest.testFindPetByOwnerId(PetServiceTest.java:86)
+Caused by: java.net.ConnectException: Connection refused: no further information
+	at com.tecsup.petclinic.services.PetServiceTest.testFindPetByOwnerId(PetServiceTest.java:86)
+
+testDeletePet  Time elapsed: 1.021 s  <<< ERROR!
+org.springframework.transaction.CannotCreateTransactionException: Could not open JPA EntityManager for transaction; nested exception is org.hibernate.exception.JDBCConnectionException: Unable to acquire JDBC Connection
+	at com.tecsup.petclinic.services.PetServiceTest.testDeletePet(PetServiceTest.java:168)
+Caused by: org.hibernate.exception.JDBCConnectionException: Unable to acquire JDBC Connection
+	at com.tecsup.petclinic.services.PetServiceTest.testDeletePet(PetServiceTest.java:168)
+Caused by: com.mysql.cj.jdbc.exceptions.CommunicationsException: 
+Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at com.tecsup.petclinic.services.PetServiceTest.testDeletePet(PetServiceTest.java:168)
+Caused by: com.mysql.cj.exceptions.CJCommunicationsException: 
+Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at com.tecsup.petclinic.services.PetServiceTest.testDeletePet(PetServiceTest.java:168)
+Caused by: java.net.ConnectException: Connection refused: no further information
+	at com.tecsup.petclinic.services.PetServiceTest.testDeletePet(PetServiceTest.java:168)
+
+testCreatePet  Time elapsed: 1.015 s  <<< ERROR!
+org.springframework.transaction.CannotCreateTransactionException: Could not open JPA EntityManager for transaction; nested exception is org.hibernate.exception.JDBCConnectionException: Unable to acquire JDBC Connection
+	at com.tecsup.petclinic.services.PetServiceTest.testCreatePet(PetServiceTest.java:104)
+Caused by: org.hibernate.exception.JDBCConnectionException: Unable to acquire JDBC Connection
+	at com.tecsup.petclinic.services.PetServiceTest.testCreatePet(PetServiceTest.java:104)
+Caused by: com.mysql.cj.jdbc.exceptions.CommunicationsException: 
+Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at com.tecsup.petclinic.services.PetServiceTest.testCreatePet(PetServiceTest.java:104)
+Caused by: com.mysql.cj.exceptions.CJCommunicationsException: 
+Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at com.tecsup.petclinic.services.PetServiceTest.testCreatePet(PetServiceTest.java:104)
+Caused by: java.net.ConnectException: Connection refused: no further information
+	at com.tecsup.petclinic.services.PetServiceTest.testCreatePet(PetServiceTest.java:104)
+
+testFindPetByTypeId  Time elapsed: 1.035 s  <<< ERROR!
+org.springframework.dao.DataAccessResourceFailureException: Unable to acquire JDBC Connection; nested exception is org.hibernate.exception.JDBCConnectionException: Unable to acquire JDBC Connection
+	at com.tecsup.petclinic.services.PetServiceTest.testFindPetByTypeId(PetServiceTest.java:72)
+Caused by: org.hibernate.exception.JDBCConnectionException: Unable to acquire JDBC Connection
+	at com.tecsup.petclinic.services.PetServiceTest.testFindPetByTypeId(PetServiceTest.java:72)
+Caused by: com.mysql.cj.jdbc.exceptions.CommunicationsException: 
+Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at com.tecsup.petclinic.services.PetServiceTest.testFindPetByTypeId(PetServiceTest.java:72)
+Caused by: com.mysql.cj.exceptions.CJCommunicationsException: 
+Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at com.tecsup.petclinic.services.PetServiceTest.testFindPetByTypeId(PetServiceTest.java:72)
+Caused by: java.net.ConnectException: Connection refused: no further information
+	at com.tecsup.petclinic.services.PetServiceTest.testFindPetByTypeId(PetServiceTest.java:72)
+
